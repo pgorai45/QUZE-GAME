@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quze-game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="screen active" id="start-screen">
+             <div class="title-bar">
+                <h1>Quize Time!</h1>
+                <button id="theme-toggle">🌙</button>
+             </div>
+             <p>Test Your Knoladge these fun questions</p>
+             <button id="start-btn">Start Quize</button>
+        </div>
+
+        <div class="screen" id="quiz-screen">
+            <div class="quize-header">
+              <!-- 🔥 INFO UP -->
+            <div class="quiz-info">
+                <p>Question: <span id="current-question">1</span>/<span id="total-questions">5</span></p>
+                <p>Score: <span id="score">0</span></p>
+                <p>Time left:<span id="time">15</span>s</p>
+                
+            </div>
+
+            <!-- 🔥 QUESTION DOWN -->
+            <h2 id="question-text">Question goes here</h2>
+            </div>
+
+            <div id="answers-container" class="answer-container">
+            </div>
+
+            <div class="progres-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+                
+        </div>
+
+        <div id="result-screen" class="screen">
+        <div class="result-card">
+
+        <h1>🎉 Quiz Completed</h1>
+        <p>🏆 High Score: <span id="high-score">0</span></p>
+
+        <div class="score-circle">
+            <span id="final-score">0</span>
+            <small>/ <span id="max-score">5</span></small>
+        </div>
+
+            <p id="result-message">Good Job!</p>  
+            <button id="review-btn">📊 Review Answers</button>
+            <button id="restart-btn">Play Again</button>
+        </div>
+    </div>
+</div>
+<div id="review-popup" class="review-popup">
+    <div class="review-content">
+        <h2>Answer Review</h2>
+        <div class="review-body" id="review-container"></div>
+
+        <div class="review-footer">
+            <button id="close-review">Close</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+    
+</body>
+</html>
