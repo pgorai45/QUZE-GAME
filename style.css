@@ -165,6 +165,7 @@ background: #121212;
     align-items: center;
     gap: 100px;
     margin-top: 10px;
+   
 }
 
 
@@ -477,7 +478,7 @@ background: #121212;
 
 
 /* responsive desine */
-@media (max-width:400px){
+@media (max-width:480px){
     /* when we hit 500px and bellow,implement the style below */
     .screen{
         padding: 1rem;
@@ -496,7 +497,7 @@ background: #121212;
         font-size: 1rem;
     }
       .quiz-info{
-        gap: 30px;   /* aro kache */
+        gap: 15px;   /* aro kache */
     }
 
     .quiz-info p{
